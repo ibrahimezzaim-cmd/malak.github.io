@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رسالة حب لملك</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ff6b6b;
+        }
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .section1 { background: linear-gradient(135deg, #ff9a9e, #fecfef); }
+        .section2 { background: linear-gradient(135deg, #a8edea, #fed6e3); }
+        .section3 { background: linear-gradient(135deg, #d299c2, #fef9d7); }
+        h1, h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            font-size: 1.3em;
+            line-height: 1.7;
+            max-width: 600px;
+            margin: 20px 0;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        p.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        button {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: #fff;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 768px) {
+            h1, h2 { font-size: 2em; }
+            p { font-size: 1.1em; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#section1">malak
+        </a>
+        <a href="#section2">hobi lik</a>
+        <a href="#section3">samhi liya</a>
+    </nav>
+
+    <section id="section1" class="section1">
+        <h1>مرحباً، ملك</h1>
+        <p id="intro">ana hna bach ngolik kanbghik bzaf a malak o had site lik bohdk bach n3abr lik 3la hobi lik o ntlb mank smaha</p>
+        <button onclick="reveal('intro')">warki hna </button>
+    </section>
+
+    <section id="section2" class="section2">
+        <h2>hobi lik</h2>
+        <p id="love">malak kanbghik o ghlat fha9k bzaf dyal lmarat o kalmt kanbghik mghadawech ljrah walkin kanwa3dk anani kola dam3a ghadi n3awdha lik </p>
+        <button onclick="reveal('love')">warki hna </button>
+    </section>
+
+    <section id="section3" class="section3">
+        <h2>samhi liya</h2>
+        <p id="forgive">malak samhi liya bzaf 3la hkolchi o kntmna tkoni smahti liya wakha had chi kamlo o ma3rftch hyati ki ghatkon bla bik kanbghik sorry again</p>
+        <button onclick="reveal('forgive')">warki hna </button>
+    </section>
+
+    <script>
+        function reveal(id) {
+            const element = document.getElementById(id);
+            element.classList.add('visible');
+        }
+    </script>
+</body>
+</html>
