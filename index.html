@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رسالة حب لملك</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#section1">malak
+        </a>
+        <a href="#section2">hobi lik</a>
+        <a href="#section3">samhi liya</a>
+    </nav>
+
+    <section id="section1" class="section1">
+        <h1>مرحباً، ملك</h1>
+        <p id="intro">ana hna bach ngolik kanbghik bzaf a malak o had site lik bohdk bach n3abr lik 3la hobi lik o ntlb mank smaha</p>
+        <button onclick="reveal('intro')">warki hna </button>
+    </section>
+
+    <section id="section2" class="section2">
+        <h2>hobi lik</h2>
+        <p id="love">malak kanbghik o ghlat fha9k bzaf dyal lmarat o kalmt kanbghik mghadawech ljrah walkin kanwa3dk anani kola dam3a ghadi n3awdha lik </p>
+        <button onclick="reveal('love')">warki hna </button>
+    </section>
+
+    <section id="section3" class="section3">
+        <h2>samhi liya</h2>
+        <p id="forgive">malak samhi liya bzaf 3la hkolchi o kntmna tkoni smahti liya wakha had chi kamlo o ma3rftch hyati ki ghatkon bla bik kanbghik sorry again</p>
+        <button onclick="reveal('forgive')">warki hna </button>
+    </section>
+
+    <script>
+        function reveal(id) {
+            const element = document.getElementById(id);
+            element.classList.add('visible');
+        }
+    </script>
+</body>
+</html>
